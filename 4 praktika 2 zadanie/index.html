@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <title>2 задание</title>
+</head>
+<body>
+  <input type="text" id="nameInput" placeholder="Введите имя">
+  <button onclick="checkName()">Проверить</button>
+  <div id="result"></div>
+
+  <script>
+    function validateName(name) {
+      if (!name || name.trim() === "") {
+        return "Имя пустое";
+      } else if (name.length < 2) {
+        return "Имя слишком короткое";
+      } else if (name.length > 50) {
+        return "Имя слишком длинное";
+      } else {
+        return name;
+      }
+    }
+
+    function checkName() {
+      const name = document.getElementById("nameInput").value;
+      const result = validateName(name);
+      document.getElementById("result").textContent = result;
+    }
+  </script>
+</body>
+</html>
+
