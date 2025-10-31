@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 1 — Алгоритм по блок-схеме (с циклом)</title>
+</head>
+<body>
+  <h2>Задание 1 — Алгоритм по блок-схеме (с циклом)</h2>
+  <p id="result1"></p>
+
+  <script>
+    let a = Number(prompt("Введите число a (начальное значение):"));
+    while (a <= 10) {
+      a = a + 1;
+    }
+    document.getElementById("result1").innerText = "Результат: a > 10 (текущее значение a = " + a + ")";
+  </script>
+</body>
+</html>

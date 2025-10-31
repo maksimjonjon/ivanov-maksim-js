@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Задание 3 — Делители числа</title>
+</head>
+<body>
+  <h2>Задание 3 — Делители числа</h2>
+  <p id="result3"></p>
+
+  <script>
+    let num = Number(prompt("Введите целое положительное число:"));
+    let divisors = "";
+    for (let i = 1; i <= num; i++) {
+      if (num % i === 0) {
+        divisors += i + " ";
+      }
+    }
+    document.getElementById("result3").innerText = "Делители числа " + num + ": " + divisors;
+  </script>
+</body>
+</html>
