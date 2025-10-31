@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Алгоритм по блок-схеме (ввод числа)</title>
 </head>
 <body>
-    let var number = 15;
-if(5 == 5) {}
+  <h2>Результат выполнения алгоритма:</h2>
+  <p id="output"></p>
+
+  <script>
+    let a = Number(prompt("Введите значение a:")); 
+  
+    if (a > 10) {
+      document.getElementById("output").innerText = "a > 10";
+    } else {
+      a = a + 1;
+      if (a > 10) {
+        document.getElementById("output").innerText = "a > 10";
+      } else {
+        document.getElementById("output").innerText = "a = " + a + " (меньше или равно 10)";
+      }
+    }
+  </script>
 </body>
 </html>
