@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>произведение элементов под чётными индексами</title>
+</head>
+<body>
+
+<script>
+const matrix = [
+  [64, 362, 35, 786, 53],
+  [73, 87, 0, 80, 367],
+  [98, 457, 76, 21, 36],
+  [64, 1, 765, 534, 26],
+  [27, 852, 14, 98, 60]
+];
+console.log("Матрица:");
+console.table(matrix);
+
+let product = 1;
+
+for (let i = 0; i < matrix.length; i += 2) {        // строки 0, 2, 4
+  for (let j = 0; j < matrix[i].length; j += 2) {   // столбцы 0, 2, 4
+    product *= matrix[i][j];
+  }
+}
+
+console.log("Произведение элементов с чётными индексами:", product);
+</script>
+</body>
+</html>
